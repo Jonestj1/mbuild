@@ -8,7 +8,7 @@ from mbuild.examples.alkane_monolayer.alkylsilane import AlkylSilane
 class AlkaneMonolayer(mb.Monolayer):
     """An akylsilane monolayer on beta-cristobalite. """
 
-    def __init__(self, pattern, tile_x=1, tile_y=1, chain_length=10):
+    def __init__(self, pattern, surface=Betacristobalite(), tile_x=1, tile_y=1, chain_length=10):
         """Create an alkylsilane monolayer on beta-cristobalite.
 
         Parameters
@@ -23,7 +23,6 @@ class AlkaneMonolayer(mb.Monolayer):
         chain_length : int, optional, default=10
             Number of carbon atoms per chain.
         """
-        surface = Betacristobalite()
         alkylsilane = AlkylSilane(chain_length)
         hydrogen = H()
         super(AlkaneMonolayer, self).__init__(surface, alkylsilane, backfill=hydrogen,
