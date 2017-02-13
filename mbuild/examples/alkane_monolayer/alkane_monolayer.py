@@ -16,6 +16,8 @@ class AlkaneMonolayer(mb.Monolayer):
         pattern : np.ndarray, shape=(n, 3), optional, default=None
             An array of planar binding locations. If not provided, the entire
             surface will be filled with `chain`.
+        surface : mb.compound, optional, default=Betacristobalite
+            Used to specify morphology of the silica substrate.
         tile_x : int, optional, default=1
             Number of times to replicate substrate in x-direction.
         tile_y : int, optional, default=1

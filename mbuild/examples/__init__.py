@@ -9,4 +9,4 @@ from mbuild.examples.alkane_monolayer.alkane_monolayer import AlkaneMonolayer
 from mbuild.examples.alkane_monolayer.alkylsilane import AlkylSilane
 from mbuild.examples.pmpc.pmpc_brush_layer import PMPCLayer
 
-from mbuild.examples.alkane_monolayer.peg_monolayer import PegMonolayer
+from mbuild.examples.alkane_monolayer.peg_monolayer import PegMonolayer, PegOxyCapMonolayer
